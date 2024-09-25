@@ -20,6 +20,13 @@ global.NashBoT = {
   onlineUsers: new Map(),
 };
 
+global.NashBot = {
+  ENDPOINT: "https://nash-rest-api-production.up.railway.app/",
+  END: "https://deku-rest-api.gleeze.com/",
+  KEN: "https://api.kenliejugarap.com/",
+  MONEY: "https://database2.vercel.app/"
+};
+
 const loadModules = (type) => {
   const folderPath = path.join(__dirname, type);
   const files = fs.readdirSync(folderPath).filter(file => file.endsWith(".js"));
